@@ -1,0 +1,23 @@
+USE paquita_surecotton;
+
+CREATE TABLE proyects(
+idProyects INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+title VARCHAR(40) NOT NULL,
+slogan VARCHAR(60) NOT NULL,
+repository VARCHAR (200) NOT NULL,
+demo VARCHAR (200) NOT NULL,
+technology VARCHAR(100) NOT NULL,
+description VARCHAR(300) NOT NULL,
+image LONGTEXT NOT NULL
+);
+
+CREATE TABLE author(
+idAuthor INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+name VARCHAR(40) NOT NULL,
+job VARCHAR(40) NOT NULL,
+photo LONGTEXT NOT NULL
+);
+
+ALTER TABLE proyects ADD column fk_author INT;
+
+ALTER TABLE proyects ADD FOREIGN KEY (fk_author) REFERENCES author(idAuthor);

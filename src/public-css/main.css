@@ -1,0 +1,143 @@
+.body-back {
+    background-color: rgb(131, 116, 31);
+  }
+  
+  .project-preview {
+    padding: 20px;
+    background-color: rgb(131, 116, 31);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .project-card {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px; /* Ajuste de tamaño */
+    width: 100%;
+    padding: 20px;
+    text-align: center; /* Centrado */
+  }
+  
+  .project-image img {
+    max-width: 80%; /* Tamaño reducido */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .project-card__title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  
+  .project-card__title-text {
+    /* display: inline-block; */
+    padding: 0 10px;
+  }
+  
+  .project-card__title::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, white, black, white);
+    z-index: -1;
+  }
+  
+  .project-author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-left: 25px;
+  }
+  
+  .project-author__photo img {
+    width: 85px; /* Tamaño reducido */
+    height: 85px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .project-author__name {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .project-author__job {
+    font-size: 0.9rem;
+    color: gray;
+  }
+  
+  .project-details {
+    width: 100%;
+    padding: 0 15px;
+  }
+  
+  .project-details__name {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+  
+  .project-details__slogan {
+    font-style: italic;
+    margin-bottom: 15px;
+  }
+  
+  .project-details__description-title {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .project-details__description {
+    margin-bottom: 20px;
+  }
+  
+  .project-details__technical-info {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .project-details__technologies {
+    font-style: italic;
+    font-size: 1rem;
+  }
+  
+  .project-details__link {
+    display: inline-block;
+    padding: 5px 10px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .project-details__link--demo {
+    background-color: darkgreen;
+  }
+  
+  .project-details__link--github {
+    background-color: darkblue;
+  }
+  
+  @media screen and (min-width: 420px) {
+    :root {
+      font-size: 14px;
+    }
+  }

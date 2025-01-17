@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PAQUITA PROJECT TESTER</title>
+    <link rel="stylesheet" href="/main.css" />
+  </head>
+
+  <body class="body-back">
+    <main class="project-preview">
+      <div class="project-image"><img src="<%= project.image %>"></div>
+      <article class="project-card">
+        <h2 class="project-card__title">
+          <!-- <span class="project-card__title-text">Nuestro proyecto</span> -->
+        </h2>
+
+        <div class="project-author">
+          <div class="project-author__photo"><img src="<%= project.photo %>"></div>
+          <h3 class="project-author__name"><%= project.name %></h3>
+          <p class="project-author__job"><%= project.job %></p>
+        </div>
+
+        <div class="project-details">
+          <h3 class="project-details__name"><%= project.title %></h3>
+          <p class="project-details__slogan"><%= project.slogan %></p>
+          <h3 class="project-details__description-title">Descripción</h3>
+          <p class="project-details__description"><%= project.description %></p>
+
+          <div class="project-details__technical-info">
+            <p class="project-details__technologies"><%= project.technology %></p>
+
+            <a
+              class="project-details__link project-details__link--demo"
+              href="<%= project.demo %>"
+              title="Haz click para ver el proyecto online"
+            >
+              Web link
+            </a>
+            <a
+              class="project-details__link project-details__link--github"
+              href="<%= project.repository %>"
+              title="Haz click para ver el código del proyecto"
+            >
+              GitHub link
+            </a>
+          </div>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
