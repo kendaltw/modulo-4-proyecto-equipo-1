@@ -8,10 +8,12 @@ Como he dicho, es una página web intuitiva, sencilla y de diseño responsive.
 
 No seas una #FASHIONVICTIM y actualiza tu proyecto with the best! #IDIOMASQUERIDA
 
+Este ha sido un proyecto grupal en el que, aunque dividimos las tareas entre todas, nos aseguramos de comprender cada paso del proceso. Además, trabajamos de forma conjunta para superar los obstáculos y resolver cualquier problema que surgiera.
+
 
 # INSTALACIÓN Y CONFIGURACIÓN
 
-Puedes clonar el repositorio directamente copiando este enlace en tu terminal: **https://github.com/Marta-ms/modulo-4-proyecto-equipo-1.git**
+Puedes clonar el repositorio directamente copiando este enlace en tu terminal: **https://github.com/kendaltw/modulo-4-proyecto-equipo-1.git**
 
 **·Instalar dependencias·**
   Para este proyecto hemos usado:
